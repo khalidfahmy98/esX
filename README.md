@@ -18,19 +18,23 @@
 
 ## 📦 Installation
 
-```bash
+-bash
 git clone https://github.com/khalidfahmy98/esX.git
 cd esX
 
+---
 
-🛠 Built With
+## 🛠 Built With
 ECMAScript (ES6+)
 
 Vanilla JavaScript
 
 No dependencies or transpilers
 
-📈 Roadmap Ideas
+---
+
+
+## 📈 Roadmap Ideas
  Middleware hooks (e.g. auth, logging)
 
  CLI for generating controllers/templates
@@ -41,7 +45,10 @@ No dependencies or transpilers
 
  Devtools/Debug mode
 
-🤝 Contributing
+
+---
+
+## 🤝 Contributing
 Contributions are welcome! To get started:
 
 Fork the repo
@@ -50,9 +57,14 @@ Add a new controller or feature
 
 Open a pull request with a clear explanation
 
-📄 License
+
+---
+
+## 📄 License
 MIT — free to use, build on, and share.
 
-🔥 Created By
+
+---
+## 🔥 Created By
 Khalid Fahmy
 Senior Fullstack Developer
