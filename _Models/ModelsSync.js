@@ -1,5 +1,5 @@
-import { ActivityTypeModel } from "../_Models/ActivityTypeModel.js";
+import { esXModelExampleModel  } from "../_Models/esXModelExample.js";
 
 export{
-    ActivityTypeModel,
+    esXModelExampleModel ,
 }
