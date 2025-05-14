@@ -1,4 +1,4 @@
-export  const ActivityTypeModel = {
+export  const esXModelExampleModel = {
     id : null,
     name_en : null,
     name_ar : null,
