@@ -21,3 +21,38 @@
 ```bash
 git clone https://github.com/khalidfahmy98/esX.git
 cd esX
+
+
+🛠 Built With
+ECMAScript (ES6+)
+
+Vanilla JavaScript
+
+No dependencies or transpilers
+
+📈 Roadmap Ideas
+ Middleware hooks (e.g. auth, logging)
+
+ CLI for generating controllers/templates
+
+ JSON/REST-style API support
+
+ Validation rules module
+
+ Devtools/Debug mode
+
+🤝 Contributing
+Contributions are welcome! To get started:
+
+Fork the repo
+
+Add a new controller or feature
+
+Open a pull request with a clear explanation
+
+📄 License
+MIT — free to use, build on, and share.
+
+🔥 Created By
+Khalid Fahmy
+Senior Fullstack Developer
