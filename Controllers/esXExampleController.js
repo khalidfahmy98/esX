@@ -1,14 +1,14 @@
 import {Controller , Web , _CRUDING  } from "../esx.js";
-import {ActivityTypeRow } from "../Components/PartnersComponents/ShippingPropertiesComponents.js";
+import { esXComponentRow } from "../Components/esXComponentRow.js";
 import {Alert, Getter, languages, locale , Swap} from "../_Tools/Tools.js";
 import { Models } from "../esx.js";
-class ActivitiesController  extends Controller {
+class esXExampleController  extends Controller {
     #_routes;
     #_listData = [];
-    #activityModel;
+    #esxModelInstance;
     #_guiModel;
     #_getter;
-    #ActivityToCreate;
+    #esXObjToCreate;
     #CurrentObject;
     #_crud;
     // Add your properties to be used as model
@@ -16,12 +16,12 @@ class ActivitiesController  extends Controller {
         super();
         this.#_routes = new Web().GetRoutesGroup("activityTypeURL");
         this.#_crud = new _CRUDING();
-        this.#activityModel = Models.ActivityTypeModel;
+        this.#esxModelInstance = Models.esXModelExampleModel ;
         this.#_guiModel  = ["name_en", "name_ar", "description", "status"];
         this.#_getter = new Getter();
     }
     // Listing Example of usage esX controller base class
-    async GetActivities(DrawWrapper) {
+    async GetDataSamples(DrawWrapper) {
         // List function used by this because it is extended from Controller base class
         this.#_listData = await this.esXGetting({
             Route: this.#_routes.list,
@@ -29,12 +29,11 @@ class ActivitiesController  extends Controller {
             Data: null,
         });
         // this code could be changed to list or draw in whatever you want to
-        for (var item of this.#_listData.activity_types) {
-            document.getElementById(DrawWrapper).innerHTML += ActivityTypeRow(item);
-        }
+        console.log(this.#_listData);
+       
     }
     //  Create Example of usage esX base controller class
-    async CreateActivityType(Wrapper) {
+    async CreateDataSamples(Wrapper) {
         // Logic by using esX tools to wrap a model to be added
         this.#ActivityToCreate = this.#_getter.GetValues(this.#_guiModel);
         const validated = this.#_crud.CRUDING({
