@@ -1,4 +1,5 @@
-const locale = document.getElementById("checkLocale").value;
+// const locale = document.getElementById("checkLocale").value;
+const locale = "en";
 const     languages  = {
         activity : {
             en:{

@@ -1,0 +1,8 @@
+class esXComponent {
+
+
+}
+
+export{
+    esXComponent,
+}
