@@ -11,8 +11,8 @@ class Kernal {
     }
     async RequestCall(url, method, data = null , headerADDons) {
         const csrfToken = document
-            .querySelector('meta[name="csrf-token"]')
-            .getAttribute("content");
+            .querySelector('input[name="csrf-token"]')
+            .getAttribute("value");
         if(typeof headerADDons === 'object' && headerADDons !== undefined && headerADDons !== null) {
              this.headers = headerADDons;
             console.warn("esX default header works perfectly with laravel , your headers applied " + headerADDons );
